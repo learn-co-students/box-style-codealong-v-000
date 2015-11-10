@@ -28,6 +28,9 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+.shadow {
+  box-shadow: 0 3px 10px #ccc;
+}
 
 
 /*////////// BACKGROUNDS //////////*/
@@ -135,7 +138,6 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
-
 }
 
 /*////////// DETAILS //////////*/
