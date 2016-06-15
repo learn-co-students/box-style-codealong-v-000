@@ -28,6 +28,7 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+<<<<<<< HEAD
 .shadow {
   box-shadow: 0 3px 10px #333;
 }
@@ -36,10 +37,13 @@ figcaption {
   border-right: 1px dotted #ccc;
   padding-right: 30px;
 }
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*////////// BACKGROUNDS //////////*/
 
+<<<<<<< HEAD
 .white-wood {
   background: url(../images/white-wood.jpg) no-repeat center top;
   background-size: cover;
@@ -59,6 +63,8 @@ background: linear-gradient(to bottom, rgba(227,228,229,1) 0%,rgba(3,4,15,0.6) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e4e5', endColorstr='#9903040f',GradientType=0 ); /* IE6-9 */
 }
 
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*/////// MEDIA ////////*/
@@ -99,17 +105,29 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
+<<<<<<< HEAD
   ;
+=======
+  background: #ccc;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 .col-2 {
   float: left;
   width: 66%;
+<<<<<<< HEAD
   ;
 }
 
 .col-3 {
   ;
+=======
+  background: #ccc;
+}
+
+.col-3 {
+  background: #ccc;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 [class*="col-"] {
@@ -139,13 +157,17 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
+<<<<<<< HEAD
 header {
   margin: 0 0 30px;
 }
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*////////// NAVBAR //////////*/
 
+<<<<<<< HEAD
 #navbar {
   position: fixed;
   top: 0;
@@ -174,7 +196,7 @@ header {
 }
 
 #navbar nav a.selected {
-  background: #333;
+  background: #334;
   color: white;
 }
 
@@ -196,11 +218,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 #logo h1 {
   font-family: 'Clicker Script', cursive;
   margin: 0;
+=======
+
+
+/*////////// LOGO //////////*/
+
+
+
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 #logo h2 {
   font-family: 'Elsie Swash Caps', cursive;
+<<<<<<< HEAD
   margin: 0;
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 /*////////// MAIN SECTIONS //////////*/
@@ -208,15 +243,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 section {
   padding: 30px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   background: white;
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 }
 
 /*////////// DETAILS //////////*/
 
+<<<<<<< HEAD
 #details {
   border-top: 1px solid white;
 }
+=======
+
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 #details div {
   height: 221px;
@@ -238,6 +280,7 @@ section {
 
 /*////////// FOOTER //////////*/
 
+<<<<<<< HEAD
 footer {
   text-align: center;
   font-size: 0.75em;
@@ -250,3 +293,6 @@ footer {
 
 
 }
+=======
+
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
