@@ -158,8 +158,9 @@ header{
   top:0;
   left: 0;
   z-index: 2;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   text-align: center;
+  background-color: white .5;
 
 }
 #navbar a.selected {
