@@ -146,12 +146,15 @@ header {
 
 /*////////// NAVBAR //////////*/
 
+  /* Links want to be displayed side by side, but they
+  are inline which you cannot means you cannot give them a width   */
+
 #navbar {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index:2;
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
@@ -161,10 +164,10 @@ header {
 }
 
 #navbar nav a {
-  display: inline-block;
-  width:16.6666667%;
+  display:inline-block;
+  width: 16.6666666667%;
   margin: 0;
-  padding: 22px 0px;
+  padding: 22px 0px 22px 0px;
   text-transform: uppercase;
   color: black;
   text-align: center;
@@ -208,8 +211,8 @@ header {
 /*////////// MAIN SECTIONS //////////*/
 
 section {
-  padding: 30px;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
   background:white;
 
 }
