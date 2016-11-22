@@ -1,7 +1,7 @@
 # CSS Box Style Code Along
 
 ## Overview
-
+  
 In this code along exercise we will apply some CSS box styles such as background images, gradients, drop shadows, and  borders.
 
 ## Steps
@@ -17,7 +17,7 @@ The gradient code that is copied and pasted in the exercise is located at the bo
 
 ### Gradient Code Snippets
 
-```css
+```css  d
 /* LIGHT-FADE */
 
 background: #efefef; /* Old browsers */
