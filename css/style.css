@@ -12,8 +12,9 @@ p {
   line-height: 1.5em;
 }
 
-figure {
-  margin: 0 0 10px;
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 figcaption {
@@ -25,7 +26,7 @@ figcaption {
 .milk-text {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
-  text-shadow: 0 2px 3px #000;
+  text-shadow: 0 0 .15rem #000, 0 .15rem .25rem #000, 0 .15rem 2rem #000;
 }
 
 
@@ -36,9 +37,13 @@ figcaption {
 
 /*/////// MEDIA ////////*/
 
-img, video, audio, iframe, table, form {
-  width: 100%; /* IE */
-  max-width: 100%; /* FF, Safari, Chrome */
+img, video, audio, table, form {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*////////// FIXES //////////*/
@@ -49,7 +54,7 @@ img, video, audio, iframe, table, form {
   box-sizing: border-box;
 }
 
-.clearfix:after {
+/*.clearfix:after {
   content: ".";
   display: block;
   clear: both;
@@ -60,16 +65,23 @@ img, video, audio, iframe, table, form {
 
 .clear {
   clear:both;
-}
+}*/
 
 /*/////// LAYOUT ////////*/
+
+body {
+  background: url('../images/white-wood.jpg') fixed;
+  background-size: cover;
+}
+
+
 
 .wrapper {
   width: 960px;
   margin: 0 auto;
 }
 
-.col-1 {
+/*.col-1 {
   float: left;
   width: 32%;
   background: #ccc;
@@ -91,7 +103,7 @@ img, video, audio, iframe, table, form {
 
 .first {
   margin-left: 0%;
-}
+}*/
 
 /*/////// SOCIAL ////////*/
 
@@ -112,39 +124,191 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
+header {
+  width: 100%;
+  box-shadow: 0 .25rem 1rem #aaa;
+  background: white;
+}
 
+#logo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+  margin: 0;
+  line-height: 100%;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+  margin: 0;
+  line-height: 100%;
+}
 
 /*////////// NAVBAR //////////*/
 
+.nav-wrapper {
+  width: 100%;
+  position: sticky;
+  top: -1px;
+  background: white;
+  box-shadow: inset 0 -.15rem .15rem #ccc;  
+}
 
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+nav a {
+  font-family: sans;
+  display: flex;
+  padding: 1rem;
+  flex-basis: 15%;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  box-shadow: inset 0 -.15rem .15rem #ccc;
+}
+
+nav a:hover {
+  box-shadow: 0 .15rem .5rem #ccc, inset 0 -.15rem .15rem #ccc;
+  color: rgb(70%, 15%, 30%);
+}
+
+nav a:active {
+  box-shadow: inset 0 .05rem .25rem #aaa;
+  color: inherit;
+}
+
+.current {
+  background: rgba(70%, 5%, 10%, .1);
+}
 
 /*////////// LOGO //////////*/
 
 
 
-#logo h1 {
-  font-family: 'Clicker Script', cursive;
-}
-
-#logo h2 {
-  font-family: 'Elsie Swash Caps', cursive;
-}
 
 /*////////// MAIN SECTIONS //////////*/
 
-section {
-  padding: 30px;
-  margin-bottom: 20px;
-
+.page-wrapper, .footer-wrapper {
+  padding: 0 1rem 0;
+  width: 100%;
 }
+
+.footer-wrapper {
+  background: white;
+  box-shadow: 0 .25rem 1rem #aaa;
+}
+
+.page-content, .footer-content {
+  max-width: 960px;
+  margin: 1rem auto 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+
+.footer-content {
+  margin-bottom: 0;
+  background: white;
+}
+
+.footer-content > section {
+  box-shadow: none;
+}
+
+.footer-content a:hover {
+  color: rgb(70%, 15%, 30%);
+}
+
+footer {
+  grid-column: span 3;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+
+/*.footer-content > section:not(:last-of-type) {
+  border-right: 2px dotted #aaa;
+}*/
+
+section {
+  padding: 1rem;
+  box-shadow: 0 .25rem 1rem #aaa;
+  grid-columns: span 1;
+  background: white;
+}
+
+figure {
+  margin: 1rem;
+}
+
+figcaption {
+  line-height: 1rem;
+}
+
+table {
+  text-align: left;
+}
+
+.hrule, #featured-property, #new, #report {
+  grid-column: span 3;
+}
+
+#promotional, #contact {
+  grid-column: span 2;
+}
+
+#featured-listings {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#map {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#contact form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+#contact label {
+  flex-basis: 15%;
+  flex-basis: content;
+}
+
+#contact label:nth-of-type(0n+4) {
+  flex-basis: 100%;
+  margin: 1rem 0 .5rem;
+}
+
+#contact input, textarea {
+  margin-bottom: .25rem;
+  flex-basis: 85%;
+  flex-grow: 1;
+}
+
+#contact input:last-of-type {
+  margin: 0;
+}
+
+/*#news {
+  grid-column: span 3;
+}*/
 
 /*////////// DETAILS //////////*/
-
-
-
-#details div {
-  height: 221px;
-}
 
 #details a:link, #details a:visited {
   color: black;
