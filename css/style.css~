@@ -200,10 +200,6 @@ section {
 
 }
 
-section#details div div {
-  padding: 20px;
-}
-
 /*////////// DETAILS //////////*/
 
 #details {
