@@ -39,7 +39,10 @@ figcaption {
 
 /*////////// BACKGROUNDS //////////*/
 
-
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 
 /*/////// MEDIA ////////*/
 
@@ -140,7 +143,7 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
-
+  background: white; 
 }
 
 /*////////// DETAILS //////////*/
