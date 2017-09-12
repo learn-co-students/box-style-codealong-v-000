@@ -141,11 +141,43 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
-
+header {
+  margin: 0 0 30px;
+}
 
 /*////////// NAVBAR //////////*/
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
 
+#navbar nav {
+  border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+  display: inline-block;
+  width: 16.6667%;
+  margin: 0;
+  padding: 22px 0;
+  border-right: 1px solid #ccc;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+#navbar nav a.selected {
+  background: #333;
+  color: white;
+}
 
 /*////////// LOGO //////////*/
 
