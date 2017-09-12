@@ -51,7 +51,7 @@ figcaption {
   background: -o-linear-gradient(top,  #efefef 0%,#ffffff 24%,#ffffff 68%,#dddddd 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #efefef 0%,#ffffff 24%,#ffffff 68%,#dddddd 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #efefef 0%,#ffffff 24%,#ffffff 68%,#dddddd 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 );
+  /*filter: progid : DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 );*/
 }
   .medium-fade {
     background: rgb(229,229,229); /* Old browsers */
@@ -101,22 +101,22 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
-  /*background: #ccc;*/
+
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  /*background: #ccc;*/
+
 }
 
 .col-3 {
-  /*background: #ccc;*/
+
 }
 
 [class*="col-"] {
   margin-left: 2%;
-  /*background: white;*/
+
 }
 
 .first {
@@ -141,7 +141,7 @@ img, video, audio, iframe, table, form {
 }
 
 /*////////// HEADER //////////*/
-header{
+header {
   margin: 0 0 30px;
 }
 
@@ -214,6 +214,7 @@ section {
 
 #details {
   border-top: 1px solid white;
+  margin-bottom: 0px;
 
 }
 
