@@ -72,6 +72,8 @@ img, video, audio, iframe, table, form {
   margin: 0 auto;
 }
 
+/* we are adding the wood stained background behind the feature property, promortional, and video content */
+
 .col-1 {
   float: left;
   width: 32%;
