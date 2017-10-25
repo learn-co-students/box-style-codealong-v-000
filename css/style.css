@@ -51,7 +51,12 @@ figcaption {
 /* GRADIENT */ 
 
 .light-fade {
-  
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d9dde3+0,bfc4c9+32,829baa+100 */
+background: #d9dde3; /* Old browsers */
+background: -moz-linear-gradient(top, #d9dde3 0%, #bfc4c9 32%, #829baa 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #d9dde3 0%,#bfc4c9 32%,#829baa 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #d9dde3 0%,#bfc4c9 32%,#829baa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9dde3', endColorstr='#829baa',GradientType=0 ); /* IE6-9 */
 }
 
 
