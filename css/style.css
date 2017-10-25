@@ -29,7 +29,7 @@ figcaption {
 }
 
 .shadow { /* this will be applied to any element you want a box shadow on */ 
-  box-shadow: ; 
+  box-shadow: 0 3px;  /* the first position is the horizontal placement/positioning, second value is the vertical placement/positioning */ 
 }
 
 
