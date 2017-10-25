@@ -28,6 +28,9 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+.shadow { /* this will be applied to any element you want a box shadow on */ 
+  box-shadow: ; 
+}
 
 
 /*////////// BACKGROUNDS //////////*/
