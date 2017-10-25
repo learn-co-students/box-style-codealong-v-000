@@ -44,7 +44,7 @@ figcaption {
 
 /* here we need to create a class for the background to be added behing the main content of the page */ 
 .white-wood {
-  background: url(../images/white-wood.jpg)
+  background: url(../images/white-wood.jpg) no-repeat center top; 
 }
 
 
