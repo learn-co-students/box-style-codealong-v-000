@@ -48,7 +48,21 @@ figcaption {
   background-size: cover; /*this will span the entire width of the page no matter how large the page is */
 }
 
+/* GRADIENT */ 
 
+.light-fade {
+  
+}
+
+
+.medium-fade {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#28343b+0,828c95+64,b5bdc8+100 */
+background: #28343b; /* Old browsers */
+background: -moz-linear-gradient(top, #28343b 0%, #828c95 64%, #b5bdc8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #28343b 0%,#828c95 64%,#b5bdc8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #28343b 0%,#828c95 64%,#b5bdc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
+} 
 /*/////// MEDIA ////////*/
 
 img, video, audio, iframe, table, form {
@@ -150,6 +164,7 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
+  background: white; 
 
 }
 
