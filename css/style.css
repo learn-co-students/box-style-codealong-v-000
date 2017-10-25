@@ -146,6 +146,9 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
+header {
+  margin: 0 0 30px; /* 30 px for space between header and main content */
+}
 
 
 /*////////// NAVBAR //////////*/
