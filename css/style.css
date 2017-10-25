@@ -45,6 +45,7 @@ figcaption {
 /* here we need to create a class for the background to be added behing the main content of the page */ 
 .white-wood {
   background: url(../images/white-wood.jpg) no-repeat center top; 
+  background-size: cover; /*this will span the entire width of the page no matter how large the page is */
 }
 
 
