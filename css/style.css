@@ -148,20 +148,32 @@ img, video, audio, iframe, table, form {
 /*////////// HEADER //////////*/
 
 header {
-  margin: 0 0 30px; /* 30 px for space between header and main content */
+  margin: 60px 0 30px; /* 30 px for space between header and main content */
 }
 
 
 /*////////// NAVBAR //////////*/
 
 #navbar {
+  margin-bottom: 20px; 
   position: fixed; 
   top: 0; 
   left: 0; 
   width: 100%; 
   z-index: 2; /* this will ensure the navbar sits on top of everything else */ 
+  border-bottom: 1px solid #ccc; 
+  text-align: center; 
 }
 
+#navbar nav {
+  border-left: 1px solid #ccc;
+  
+}
+
+#navbar nav a {
+  display: inline-block; 
+  width: 16.66667%; 
+}
 /*////////// LOGO //////////*/
 
 
