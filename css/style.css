@@ -33,8 +33,11 @@ figcaption {
 }
 
 .border-right {
-  border-right: ; 
+  border-right: 1px dotted #ccc; 
+  padding-right: 30px; /* added to keep space between the content and the border */
 }
+
+
 
 
 /*////////// BACKGROUNDS //////////*/
