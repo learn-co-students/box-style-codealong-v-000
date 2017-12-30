@@ -7,7 +7,7 @@ h3 {
   margin: 0 0 10px;
 }
 
-p { 
+p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -28,12 +28,41 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+.shadow{
+  box-shadow: 0 3px 10px #333;
+}
 
+.border-right{
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+}
 
 /*////////// BACKGROUNDS //////////*/
 
+.white-wood{
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 
+.light-fade{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,f3f3f3+50,f1f1f1+96 */
+background: #efefef; /* Old browsers */
+background: -moz-linear-gradient(top, #efefef 0%, #f3f3f3 50%, #f1f1f1 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #efefef 0%,#f3f3f3 50%,#f1f1f1 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #efefef 0%,#f3f3f3 50%,#f1f1f1 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
 
+}
+
+.medium-fade{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,ebebeb+99,ebebeb+100 */
+background: #e5e5e5; /* Old browsers */
+background: -moz-linear-gradient(top,  #e5e5e5 0%, #ebebeb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e5e5e5 0%,#ebebeb 99%,#ebebeb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e5e5e5 0%,#ebebeb 99%,#ebebeb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+
+}
 /*/////// MEDIA ////////*/
 
 img, video, audio, iframe, table, form {
@@ -72,17 +101,17 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
-  background: #ccc;
+
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
+
 }
 
 .col-3 {
-  background: #ccc;
+
 }
 
 [class*="col-"] {
@@ -135,6 +164,7 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
+  background: white;
 
 }
 
@@ -161,5 +191,3 @@ section {
 }
 
 /*////////// FOOTER //////////*/
-
-
