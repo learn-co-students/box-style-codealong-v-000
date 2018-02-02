@@ -28,10 +28,43 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+<<<<<<< HEAD
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
+
+.border-right {
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+}
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*////////// BACKGROUNDS //////////*/
 
+<<<<<<< HEAD
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.light-fade {
+  background: -moz-linear-gradient(top, rgba(227,228,229,1) 0%, rgba(3,4,15,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(227,228,229,1) 0%,rgba(3,4,15,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(227,228,229,1) 0%,rgba(3,4,15,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e4e5', endColorstr='#9903040f',GradientType=0 ); /* IE6-9 */
+}
+
+.medium-fade {
+  background: -moz-linear-gradient(top, rgba(227,228,229,1) 0%, rgba(3,4,15,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(227,228,229,1) 0%,rgba(3,4,15,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(227,228,229,1) 0%,rgba(3,4,15,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e4e5', endColorstr='#9903040f',GradientType=0 ); /* IE6-9 */
+}
+
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*/////// MEDIA ////////*/
@@ -72,17 +105,29 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
+<<<<<<< HEAD
+  ;
+=======
   background: #ccc;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 .col-2 {
   float: left;
   width: 66%;
+<<<<<<< HEAD
+  ;
+}
+
+.col-3 {
+  ;
+=======
   background: #ccc;
 }
 
 .col-3 {
   background: #ccc;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 [class*="col-"] {
@@ -112,10 +157,68 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
+<<<<<<< HEAD
+header {
+  margin: 0 0 30px;
+}
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 
 /*////////// NAVBAR //////////*/
 
+<<<<<<< HEAD
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+#navbar nav {
+  border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+  display: inline-block;
+  width: 16.66667%;
+  margin: 0;
+  padding: 22px 0;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  text-decoration: none;
+  font: 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+#navbar nav a.selected {
+  background: #334;
+  color: white;
+}
+
+#navbar nav a:hover {
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,000102+100&1+0,0.6+100 */
+background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(0,1,2,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(0,1,2,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(0,1,2,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#99000102',GradientType=0 ); /* IE6-9 */
+}
+
+/*////////// LOGO //////////*/
+
+#logo {
+  padding: 84px 0 0;
+}
+
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+  margin: 0;
+=======
 
 
 /*////////// LOGO //////////*/
@@ -124,10 +227,15 @@ img, video, audio, iframe, table, form {
 
 #logo h1 {
   font-family: 'Clicker Script', cursive;
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 #logo h2 {
   font-family: 'Elsie Swash Caps', cursive;
+<<<<<<< HEAD
+  margin: 0;
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 }
 
 /*////////// MAIN SECTIONS //////////*/
@@ -135,12 +243,22 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
+<<<<<<< HEAD
+  background: white;
+=======
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 }
 
 /*////////// DETAILS //////////*/
 
+<<<<<<< HEAD
+#details {
+  border-top: 1px solid white;
+}
+=======
 
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
 
 #details div {
   height: 221px;
@@ -162,4 +280,19 @@ section {
 
 /*////////// FOOTER //////////*/
 
+<<<<<<< HEAD
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
 
+
+
+
+}
+=======
+
+>>>>>>> 103d83a8fa0425ee10fa25976c051f53627e14e0
