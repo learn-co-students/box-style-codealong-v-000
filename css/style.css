@@ -28,11 +28,43 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
 
+.border-right {
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+}
 
 /*////////// BACKGROUNDS //////////*/
 
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 
+.light-fade {
+  background: #e2e2e2;
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fefefe 33%, #fefefe 66%, #d1d1d1 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(0%, #dbdbdb), color-stop(33%, #fefefe), color-stop(66%, #fefefe), color-stop(100%, #d1d1d1));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fefefe 33%, #fefefe 66%, #d1d1d1 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fefefe 33%, #fefefe 66%, #d1d1d1 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fefefe 33%, #fefefe 66%, #d1d1d1 100%);
+  background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 0%, #fefefe 33%, #fefefe 66%, #d1d1d1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#d1d1d1', GradientType=0 );
+}
+
+.medium-fade {
+  background: #e2e2e2;
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fafafa 58%, #fefefe 95%, #ffffff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(0%, #dbdbdb), color-stop(58%, #fafafa), color-stop(95%, #fefefe), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fafafa 58%, #fefefe 95%, #ffffff 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fafafa 58%, #fefefe 95%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 0%, #fafafa 58%, #fefefe 95%, #ffffff 100%);
+  background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 0%, #fafafa 58%, #fefefe 95%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#ffffff', GradientType=0 );
+}
 
 /*/////// MEDIA ////////*/
 
@@ -72,17 +104,15 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
-  background: #ccc;
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
 }
 
 .col-3 {
-  background: #ccc;
+ 
 }
 
 [class*="col-"] {
@@ -112,22 +142,70 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
-
+header {
+  margin: 0 0 30px;
+}
 
 /*////////// NAVBAR //////////*/
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
 
+#navbar nav {
+  border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+  display: inline-block;
+  width: 16.6666667%;
+  margin: 0;
+  padding: 22px 0;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  text-decoration: none;
+  font: 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+#navbar nav a.selected {
+  background: #333;
+  color: white;
+}
+
+#navbar nav a:hover {
+  color: white;
+  background: #2e2e2e;
+  background: -moz-linear-gradient(top, #2e2e2e 0%, #ffffff 0%, #2e2e2e 32%, #2e2e2e 66%, #fefefe 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2e2e2e), color-stop(0%, #ffffff), color-stop(32%, #2e2e2e), color-stop(66%, #2e2e2e), color-stop(100%, #fefefe));
+  background: -webkit-linear-gradient(top, #2e2e2e 0%, #ffffff 0%, #2e2e2e 32%, #2e2e2e 66%, #fefefe 100%);
+  background: -o-linear-gradient(top, #2e2e2e 0%, #ffffff 0%, #2e2e2e 32%, #2e2e2e 66%, #fefefe 100%);
+  background: -ms-linear-gradient(top, #2e2e2e 0%, #ffffff 0%, #2e2e2e 32%, #2e2e2e 66%, #fefefe 100%);
+  background: linear-gradient(to bottom, #2e2e2e 0%, #ffffff 0%, #2e2e2e 32%, #2e2e2e 66%, #fefefe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#fefefe', GradientType=0 );
+}
 
 /*////////// LOGO //////////*/
 
-
+#logo {
+  padding: 84px 0 0;
+}
 
 #logo h1 {
   font-family: 'Clicker Script', cursive;
+  margin: 0;
 }
 
 #logo h2 {
   font-family: 'Elsie Swash Caps', cursive;
+  margin: 0;
 }
 
 /*////////// MAIN SECTIONS //////////*/
@@ -135,12 +213,15 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
+  background: white;
 
 }
 
 /*////////// DETAILS //////////*/
 
-
+#details {
+  border-top: 1px solid white;
+}
 
 #details div {
   height: 221px;
@@ -161,5 +242,14 @@ section {
 }
 
 /*////////// FOOTER //////////*/
+
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
+
 
 
