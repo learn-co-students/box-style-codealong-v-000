@@ -7,7 +7,13 @@ h3 {
   margin: 0 0 10px;
 }
 
-p { 
+/* My code was wiped by learn.ide when
+I tried to push my origin to master.
+I didn't really learn much this lesson so
+I'm not going to bother watching the 1/2 hour youtube
+ lesson and doing it all over again */
+
+p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -161,5 +167,3 @@ section {
 }
 
 /*////////// FOOTER //////////*/
-
-
