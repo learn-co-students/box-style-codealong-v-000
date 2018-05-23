@@ -1,5 +1,9 @@
 # CSS Box Style Code Along
 
+## Note 
+
+Actual work done at Jirles/exceptional-realty. This repo was only forked to 'pass' the lab.
+
 ## Overview
 
 In this code along exercise we will apply some CSS box styles such as
