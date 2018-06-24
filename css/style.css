@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+@import url(../images/white-wood.jpg)
 
 /*////////// GLOBAL //////////*/
 
@@ -7,7 +8,7 @@ h3 {
   margin: 0 0 10px;
 }
 
-p { 
+p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -59,7 +60,7 @@ img, video, audio, iframe, table, form {
 }
 
 .clear {
-  clear:both;
+  clear: both;
 }
 
 /*/////// LAYOUT ////////*/
@@ -133,14 +134,12 @@ img, video, audio, iframe, table, form {
 /*////////// MAIN SECTIONS //////////*/
 
 section {
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 20px;
 
 }
 
 /*////////// DETAILS //////////*/
-
-
 
 #details div {
   height: 221px;
@@ -161,5 +160,3 @@ section {
 }
 
 /*////////// FOOTER //////////*/
-
-
