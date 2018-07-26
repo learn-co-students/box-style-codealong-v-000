@@ -7,7 +7,7 @@ h3 {
   margin: 0 0 10px;
 }
 
-p { 
+p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -32,7 +32,63 @@ figcaption {
 
 /*////////// BACKGROUNDS //////////*/
 
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
 
+.border-right {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.light-fade {
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 6%, rgba(241,241,241,1) 32%, rgba(225,225,225,1) 65%, rgba(225,225,225,1) 98%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 6%,rgba(241,241,241,1) 32%,rgba(225,225,225,1) 65%,rgba(225,225,225,1) 98%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 6%,rgba(241,241,241,1) 32%,rgba(225,225,225,1) 65%,rgba(225,225,225,1) 98%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+.medium-fade {
+  background: rgb(229, 229, 229); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 99%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(229, 229, 229, 1)),
+    color-stop(99%, rgba(255, 255, 255, 1))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 99%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 99%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 99%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 99%
+  ); /* W3C */
+}
 
 /*/////// MEDIA ////////*/
 
@@ -72,17 +128,14 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
-  background: #ccc;
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
 }
 
 .col-3 {
-  background: #ccc;
 }
 
 [class*="col-"] {
@@ -112,11 +165,45 @@ img, video, audio, iframe, table, form {
 
 /*////////// HEADER //////////*/
 
+header {
+  margin: 0 0 30px;
+}
 
 
 /*////////// NAVBAR //////////*/
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
 
+#navbar nav {
+  border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+  display: inline-block;
+  width: 16%;
+  margin: 0;
+  padding: 22px 0;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  text-decoration: none;
+  font: 1em Ariel;
+}
+
+#navbar nav a.selected {
+  background: #333;
+  color: white;
+  
+}
 
 /*////////// LOGO //////////*/
 
@@ -135,7 +222,7 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
-
+  background: white;
 }
 
 /*////////// DETAILS //////////*/
@@ -161,5 +248,3 @@ section {
 }
 
 /*////////// FOOTER //////////*/
-
-
