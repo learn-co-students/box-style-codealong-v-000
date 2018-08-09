@@ -10,15 +10,15 @@ function loadInitial() {
   .then(resp => {
       resp.json().then( data => {
         displayPhoto(data)
-        getMeteors()
         getQuote()
       })
     })
   }
 
 function displayPhoto(data) {
+  debugger
   const photo = '<img src=' + '"' + data.url + '">' + '<i> <figcaption>NASA Photo of the Day: ' + data.title + '</figcaption> </i> '
-  const explanation = '<p>' + data.explanation + '</p>'
+  const explanation = data.explanation
   $('#two').append(photo)
   $('#two').append(explanation)
 }
@@ -41,7 +41,7 @@ function showMeteors(meteorURL){
           addMeteorToPage += '<p id="hazardWarning">Potentially Hazardous</p>'
         }
         addMeteorToPage += ('<p>Min: ' + Math.round(meteorMin) + 'ft Max: ' + Math.round(meteorMax) + 'ft</p>')
-        // $('#two').append(addMeteorToPage)
+        $('#two').append(addMeteorToPage)
       })
     })
 }
