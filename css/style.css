@@ -45,12 +45,21 @@ figcaption {
 }
 
 .light-fade {
-  background: #a90329; /* Old browsers */
+background: #a90329; /* Old browsers */
 background: -moz-linear-gradient(top, #a90329 0%, #8f0222 25%, #6d0019 39%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 25%,#6d0019 39%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #a90329 0%,#8f0222 25%,#6d0019 39%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
 }
+
+.medium-fade {
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 18%, #560014 32%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 18%,#560014 32%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a90329 0%,#8f0222 18%,#560014 32%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#560014',GradientType=0 ); /* IE6-9 */
+}
+
 /*/////// MEDIA ////////*/
 
 img, video, audio, iframe, table, form {
@@ -126,23 +135,68 @@ img, video, audio, iframe, table, form {
 }
 
 /*////////// HEADER //////////*/
-
+  header{
+    margin: 0 0 30px;
+  }
 
 
 /*////////// NAVBAR //////////*/
+#navbar {
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 2;
+border-bottom: 1px solid #ccc;
+text-align: center;
+}
+
+#navbar {
+  border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+  display: inline block ;
+  width: 16.666667%;
+  margin: 0;
+  padding: 22px 0;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  text-decoration: none;
+  font: 1em "Trenbuchet MS", Arial, sans-serif;
+}
+
+#navbar nav a.selected{
+  background: #333;
+  color: white;
+}
 
 
-
+#navbar nav a:hover{
+  color: white;
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 18%, #00a7d6 32%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 18%,#00a7d6 32%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a90329 0%,#8f0222 18%,#00a7d6 32%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#00a7d6',GradientType=0 ); /* IE6-9 */
+}
 /*////////// LOGO //////////*/
 
-
+#llogo{
+  padding: 84px 0 0;
+}
 
 #logo h1 {
   font-family: 'Clicker Script', cursive;
+  margin: 0;
 }
 
 #logo h2 {
   font-family: 'Elsie Swash Caps', cursive;
+  margin: 0;
 }
 
 /*////////// MAIN SECTIONS //////////*/
@@ -155,7 +209,9 @@ section {
 
 /*////////// DETAILS //////////*/
 
-
+#details {
+  border-top: 1px solid white;
+}
 
 #details div {
   height: 221px;
@@ -176,3 +232,12 @@ section {
 }
 
 /*////////// FOOTER //////////*/
+
+
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
