@@ -31,7 +31,10 @@ figcaption {
 
 
 /*////////// BACKGROUNDS //////////*/
-
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 
 
 /*/////// MEDIA ////////*/
@@ -72,19 +75,28 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
-  background: #ccc;
+
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
+
 }
 
 .col-3 {
-  background: #ccc;
+
 }
 
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
+
+.border-right {
+border-right: 1px dotted #333;
+padding-right: 30px;
+
+}
 [class*="col-"] {
   margin-left: 2%;
 }
@@ -135,6 +147,7 @@ img, video, audio, iframe, table, form {
 section {
   padding: 30px;
   margin-bottom: 20px;
+  background: white;
 
 }
 
